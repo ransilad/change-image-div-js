@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Change image on div with JS</title>
+	<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+	<script>
+		function changeImg(url) {
+			$('.avatar-container').html('<div class="avatar-img-cover" style="height: 50px;border-radius: 100%;overflow:hidden;background: url('+url+');background-repeat: no-repeat;background-size: cover;background-position: center;display: block;width: 50px;"></div>')
+		}
+	</script>
+</head>
+<body>
+<div class="avatar-container" style="padding: 25px;">
+	<div class="avatar-img-cover" style="height: 50px;border-radius: 100%;overflow:hidden;background: url(http://dvch4zq3tq7l4.cloudfront.net/miu-miu/2017/spring/ready-to-wear/0001.jpg?_=123124);background-repeat: no-repeat;background-size: cover;background-position: center;display: block;width: 50px;">
+	</div>
+</div>
+<button onclick="changeImg('http://dvch4zq3tq7l4.cloudfront.net/miu-miu/2017/spring/ready-to-wear/0001.jpg')">Change img 1</button> - 
+<button onclick="changeImg('https://pashion-profiles.s3.amazonaws.com/9.jpeg')">Change img 2</button>
+</body>
+</html>
